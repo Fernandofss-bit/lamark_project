@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Okashi italic';
+    src: url(fonts/okashi-cufonfonts-webfont/Okashi-italic.woff);
+}
+
+:root{
+    --bg-color: #191919;
+    --border-color: #820201;
+    --font-color: #FCFCFC;
+}
+
+.site-header{
+    background-image: linear-gradient(#333, #202020,#1d1d1d);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container{
+    font-family: 'Okashi italic', cursive;
+    background-color: var(--bg-color);
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--border-color);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: -100px;
+}
+
+.logo-container h1{
+    font-size: 1.2em;
+    margin: 0;
+    line-height: 1;
+}
+
+.logo-container p{
+    font-size: 0.35em;
+    margin: 0;
+    line-height: 1;
+}
+
+.logo-title{
+    font-size: 3em;
+    color: var(--font-color);
+    letter-spacing: 2px;
+}
+
+.logo-subtitle{
+    font-size: 0.8em;
+    color: var(--font-color);
+}
+
+.main-menu{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-menu li a{
+    display: block;
+    color: var(--font-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-menu li a:hover{
+    color: var(--border-color);
+}
+
+body{
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: 'Okashi italic', cursive;
+}
